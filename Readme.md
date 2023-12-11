@@ -51,13 +51,12 @@ make migration
 ```
 
 4. Ext JS 7.7 start manual - from zip file:
-https://docs.sencha.com/extjs/7.7.0/guides/getting_started/getting_started_with_zip.html
+```https://docs.sencha.com/extjs/7.7.0/guides/getting_started/getting_started_with_zip.html```
 
 Download Sencha Cmd CLI
-https://www.sencha.com/products/extjs/evaluate/
+```https://www.sencha.com/products/extjs/evaluate/```
 
-5. Install Sencha Cmd CLI
-In linux:
+5. Install Sencha Cmd CLI. Example in linux:
 ```bash
 bash ./SenchaCmd-7.7.0.36-linux-amd64.sh
 ```
@@ -72,19 +71,19 @@ cd public
 sencha app install --framework=../vendor/sencha-sdks/ext
 ```
 
-
-### Run app
+### Run app:
 
 ```plaintext
 http://localhost:8000
 ```
-# DB 
+
+DB
+```
 name: test
 pass: test1234
+```
 
-# Container console:
+Container console:
 ```bash
 make console
 ```
-
-# Run test
