@@ -24,7 +24,7 @@ Ext.define('extJs.view.main.MainController', {
                     fieldLabel: 'Date Last',
                     name: 'date',
                     format: 'Y-m-d H:i:s',
-                    value: Ext.Date.parse(record.get('dateLast'), 'Y-m-d H:i:s') 
+                    value: Ext.Date.parse(record.get('dateLast'), 'Y-m-d\\TH:i:sP')
                 }]
             }],
             buttons: [{

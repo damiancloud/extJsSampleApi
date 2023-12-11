@@ -197,6 +197,10 @@ class SampleControllerApi extends AbstractController
                 $dateLast = \DateTime::createFromFormat('Y-m-d', $data['date']);
                 if ($dateLast instanceof \DateTime) {
                     $sample->setDateLast(new \DateTime($data['date']));
+                } else {
+                    $dateLast = \DateTime::createFromFormat('Y-m-d H:i:s', $data['date']);
+                    if ($dateLast instanceof \DateTime)
+                        $sample->setDateLast(new \DateTime($data['date']));
                 }
             }
 
