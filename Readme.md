@@ -77,13 +77,27 @@ sencha app install --framework=../vendor/sencha-sdks/ext
 http://localhost:8000
 ```
 
-Db:
+### Db:
 ```
 name: test
 pass: test1234
 ```
 
-Container console:
+### Container console:
 ```bash
 make console
 ```
+
+
+### Postman Test Collection
+
+You can import the Postman test collection for this project either from the following link:
+
+[Postman Collection - API Tests](https://api.postman.com/collections/8343515-23bc0a68-01b5-4ebd-8cc8-a8f9e25b4e80?access_key=PMAT-01HH8BBXWW1NFGZ2ZMF7YCRQVY)
+
+Or, you can use the local file located at `test/postman/8343515-23bc0a68-01b5-4ebd-8cc8-a8f9e25b4e80.json`.
+
+Importing the collection will provide you with pre-configured API tests to ensure smooth interaction with the endpoints.
+
+---
+
