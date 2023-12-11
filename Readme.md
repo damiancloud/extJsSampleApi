@@ -77,7 +77,7 @@ sencha app install --framework=../vendor/sencha-sdks/ext
 http://localhost:8000
 ```
 
-DB
+Db:
 ```
 name: test
 pass: test1234

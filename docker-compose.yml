@@ -6,7 +6,7 @@ services:
       context: ./
       dockerfile: Dockerfile
     image: image-php_to_pgsql
-    container_name: app-container
+    container_name: app_container
     restart: always
     working_dir: /var/www
     extra_hosts:
@@ -17,7 +17,7 @@ services:
       - postgres-service
   nginx:
     image: nginx:1.19-alpine
-    container_name: app-container-nginex
+    container_name: app_container-nginex
     restart: always
     ports:
       - 8000:80
@@ -26,7 +26,7 @@ services:
       - ./nginx:/etc/nginx/conf.d
   postgres-service:
     image: postgres:latest
-    container_name: app-container-postgres
+    container_name: app_container-postgres
     restart: always
     ports:
       - 5432:5432

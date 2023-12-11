@@ -1,4 +1,4 @@
-CONTAINER_NAME = app-container
+CONTAINER_NAME = app_container
 
 start:
 	docker-compose build
