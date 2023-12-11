@@ -1,0 +1,8 @@
+<HTML> 
+    <head> 
+        <link rel = "stylesheet" type = "text/css" href ="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-crisp/resources/theme-crisp-all.css"/> 
+        <script type = "text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/extjs/6.2.0/ext-all.js"></script> 
+        <script type = "text/javascript" src = "app.js" ></script> 
+    </head>
+    AAA
+</html>
