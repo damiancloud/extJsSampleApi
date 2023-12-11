@@ -23,8 +23,7 @@ Ext.define('extJs.view.main.MainController', {
                     xtype: 'datefield',
                     fieldLabel: 'Date Last',
                     name: 'date',
-                    //value: record.get('dateLast')
-                    format: 'Y-m-d H:i:s',  // Dostosuj format daty
+                    format: 'Y-m-d H:i:s',
                     value: Ext.Date.parse(record.get('dateLast'), 'Y-m-d H:i:s') 
                 }]
             }],
@@ -64,7 +63,6 @@ Ext.define('extJs.view.main.MainController', {
         var newRecord = Ext.create('extJs.model.Sample', {
             id: '',
             name: '',
-            dateCreated: '',
             status: '',
             dateLast: ''
         });
@@ -81,12 +79,6 @@ Ext.define('extJs.view.main.MainController', {
                     name: 'name',
                     value: newRecord.get('name')
                 }, {
-                    xtype: 'datefield',
-                    fieldLabel: 'Data Created',
-                    name: 'dateCreated',
-                    format: 'Y-m-d H:i:s', 
-                    value: newRecord.get('dateCreated')
-                }, {
                     xtype: 'textfield',
                     fieldLabel: 'Status',
                     name: 'status',
@@ -94,7 +86,7 @@ Ext.define('extJs.view.main.MainController', {
                 }, {
                     xtype: 'datefield',
                     fieldLabel: 'Date Last',
-                    name: 'dateLast',
+                    name: 'date',
                     format: 'Y-m-d H:i:s', 
                     value: newRecord.get('dateLast')
                 }]
