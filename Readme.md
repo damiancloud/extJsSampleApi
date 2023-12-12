@@ -65,7 +65,12 @@ bash ./SenchaCmd-7.7.0.36-linux-amd64.sh
 ```bash
 sencha generate app --ext sencha-sdks vendor/sencha-sdks
 ```
-7. Install ext (vendor) to extJs app
+7. Change App Id
+```
+make change-app-id
+```
+
+8. Install ext (vendor) to extJs app
 ```bash
 cd public
 sencha app install --framework=../vendor/sencha-sdks/ext
